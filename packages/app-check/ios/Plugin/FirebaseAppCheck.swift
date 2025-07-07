@@ -5,6 +5,10 @@ import FirebaseAppCheck
 
 @objc public class FirebaseAppCheck: NSObject {
 
+    /**
+      * Initializes the FirebaseAppCheck plugin.
+      * This method configures Firebase if it has not been configured yet.
+      */
     override public init() {
         if FirebaseApp.app() == nil {
             FirebaseApp.configure()
